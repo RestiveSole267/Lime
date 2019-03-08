@@ -6,4 +6,6 @@ bot.registry.registerGroup('simple','Simple');
 bot.registry.registerDefaults();
 bot.registry.registerCommandIn(__dirname + "/commands");
 
+global.servers = {};
+
 bot.login('');
