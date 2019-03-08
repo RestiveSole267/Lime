@@ -18,7 +18,12 @@ class JoinChannelCommand extends commando.Command
          {
             if(message.guild.voiceConnection.); 
             {
-                message.member.voicechannel.join()
+                 if(!servers[message.guild.id])
+                 {
+                     servers[message.guild.id] = {queue; [] }
+                 }
+                 var server = servers[message.guild.id]
+                 message.member.voicechannel.join()
                     .then(connection =>{
                         message.reply("Successfully Joined!");
                     })
